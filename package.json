@@ -1,7 +1,38 @@
 {
-  "name": "root",
+  "name": "@endevors/toolbox",
   "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "lint:fix": "lerna run lint:fix",
+    "lint": "lerna run lint",
+    "test:integration:run:ci": "yarn run test:integration:run -w 8",
+    "test:integration:run": "dotenv -- jest \"$TEST_SCOPE[\\/]?(src\\/.+\\.|/)integration\\.ts$\"",
+    "test:integration:watch": "yarn run test:integration:run --watch",
+    "test:integration": "yarn run test:integration:run",
+    "test:unit:ci": "yarn run test:unit -w 8",
+    "test:unit:coverage": "yarn run test:unit --coverage",
+    "test:unit:watch": "yarn run test:unit --watch",
+    "test:unit": "dotenv -- jest \"packages\\/.*[\\/]?(src\\/.+\\.|/)spec\\.ts$\"",
+    "test": "yarn run test:unit && yarn run test:integration --passWithNoTests"
+  },
+  "author": {
+    "email": "daniel.park@endevors.io",
+    "name": "Daniel Park",
+    "url": "https://github.com/gimli01"
+  },
   "devDependencies": {
+    "cz-lerna-changelog": "^2.0.3",
     "lerna": "^3.22.1"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
   }
 }

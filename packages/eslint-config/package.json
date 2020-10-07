@@ -1,0 +1,26 @@
+{
+  "name": "@endevors/eslint-config",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "author": "Daniel Park <daniel.park@yum.com>",
+  "homepage": "https://github.com/gimli01/endevors-toolbox#readme",
+  "license": "ISC",
+  "main": "lib/eslint-config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gimli01/endevors-toolbox.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/gimli01/endevors-toolbox/issues"
+  }
+}
