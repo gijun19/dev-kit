@@ -5,22 +5,35 @@
   "author": "Daniel Park <daniel.park@yum.com>",
   "homepage": "https://github.com/gimli01/endevors-toolbox#readme",
   "license": "ISC",
-  "main": "lib/ddd-lib.js",
+  "main": "dist/ddd-lib.js",
   "directories": {
-    "lib": "lib",
+    "lib": "dist",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gimli01/endevors-toolbox.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "lint:fix": "eslint src/**/*.{js,ts} --verbose --fix",
+    "format": "prettier --write src/**/*.ts"
   },
   "bugs": {
     "url": "https://github.com/gimli01/endevors-toolbox/issues"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
   }
 }

@@ -1,26 +1,45 @@
 {
   "name": "@endevors/eslint-config",
   "version": "0.1.0",
-  "description": "> TODO: description",
+  "description": "A shareable ESLint configuration with Prettier. Works for both JavaScript and TypeScript projects",
   "author": "Daniel Park <daniel.park@yum.com>",
   "homepage": "https://github.com/gimli01/endevors-toolbox#readme",
   "license": "ISC",
-  "main": "lib/eslint-config.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
-    "lib": "lib",
+    "lib": "dist",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gimli01/endevors-toolbox.git"
   },
   "scripts": {
+    "clean": "rimraf dist/",
+    "lint": "eslint src/**/*.{js,ts} --verbose",
+    "lint:fix": "eslint src/**/*.{js,ts} --verbose --fix",
+    "prepack": "npm run clean && tsc",
+    "format": "prettier --write src/**/*.ts",
+    "release": "standard-version",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/gimli01/endevors-toolbox/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.5",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
   }
 }
