@@ -16,7 +16,7 @@
     "url": "https://github.com/gimli01"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "3.3.0",
+    "cz-lerna-changelog": "2.0.3",
     "lerna": "^3.22.1"
   },
   "workspaces": {
@@ -24,8 +24,9 @@
       "packages/*"
     ]
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "http://localhost:4873/"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
   }
 }
