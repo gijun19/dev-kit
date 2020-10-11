@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "build": "lerna run build",
-    "format": "lerna run format",
-    "lint:fix": "lerna run lint:fix",
-    "lint": "lerna run lint",
-    "test": "lerna run test"
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:build": "lerna run build",
+    "lerna:format": "lerna run format",
+    "lerna:lint:fix": "lerna run lint:fix --concurrency 1 --since HEAD",
+    "lerna:lint": "lerna run lint",
+    "lerna:test": "lerna run test"
   },
   "author": {
     "email": "daniel.park@endevors.io",
