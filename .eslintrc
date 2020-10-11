@@ -3,7 +3,7 @@
   "env": {
     "node": true,
     "es6": true,
-    "jest": true
+    "mocha": true
   },
   "parserOptions": {
     "ecmaVersion": 2019,

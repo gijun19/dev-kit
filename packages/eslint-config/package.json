@@ -5,14 +5,14 @@
   "author": "Daniel Park <daniel.park@endevors.io>",
   "homepage": "https://github.com/gimli01/dev-kit#readme",
   "license": "ISC",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "directories": {
-    "lib": "dist",
+    "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "repository": {
     "type": "git",
