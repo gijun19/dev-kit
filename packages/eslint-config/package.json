@@ -31,6 +31,9 @@
   "bugs": {
     "url": "https://github.com/gimli01/endevors-toolbox/issues"
   },
+  "peerDependencies": {
+    "eslint": ">= 7"
+  },
   "devDependencies": {
     "@types/node": "^14.11.5",
     "@typescript-eslint/eslint-plugin": "^4.4.0",
