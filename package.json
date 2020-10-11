@@ -16,6 +16,8 @@
     "url": "https://github.com/gimli01"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "cz-lerna-changelog": "2.0.3",
     "lerna": "^3.22.1"
   },
