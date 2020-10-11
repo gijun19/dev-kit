@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "A shareable ESLint configuration with Prettier for NodeJS applications. Works for both JavaScript and TypeScript projects",
   "author": "Daniel Park <daniel.park@endevors.io>",
-  "homepage": "https://github.com/gimli01/endevors-toolbox#readme",
+  "homepage": "https://github.com/gimli01/dev-kit#readme",
   "license": "ISC",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gimli01/endevors-toolbox.git"
+    "url": "git+https://github.com/gimli01/dev-kit.git"
   },
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
@@ -29,7 +29,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/gimli01/endevors-toolbox/issues"
+    "url": "https://github.com/gimli01/dev-kit/issues"
   },
   "peerDependencies": {
     "eslint": ">= 7"
